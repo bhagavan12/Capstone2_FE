@@ -25,7 +25,7 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { useAuth } from './context/AuthContext';
 import Login from './pages/login';
-import Register from './pages/Register';
+import Register from './pages/register';
 import Home from './pages/Home';
 import Hmsg from './pages/Hmsg';
 import PrivateRoute from './components/PrivateRoute';
