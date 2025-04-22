@@ -1,0 +1,127 @@
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1a237e 0%, #0d47a1 100%);
+    padding: 1rem;
+  }
+  
+  .auth-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2.5rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  }
+  
+  .auth-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: white;
+  }
+  
+  .auth-logo {
+    width: 48px;
+    height: 48px;
+    color: #2196f3;
+    margin-bottom: 1rem;
+  }
+  
+  .auth-header h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .auth-header p {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  
+  .input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-group svg {
+    position: absolute;
+    left: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 0.875rem 1rem 0.875rem 3rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .input-group input:focus {
+    outline: none;
+    border-color: #2196f3;
+    background: rgba(255, 255, 255, 0.15);
+  }
+  
+  .auth-button {
+    background: #2196f3;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .auth-button:hover {
+    background: #1976d2;
+  }
+  
+  .auth-link {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.875rem;
+  }
+  
+  .auth-link a {
+    color: #2196f3;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 0.25rem;
+  }
+  
+  .auth-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .auth-card {
+      padding: 2rem 1.5rem;
+    }
+  
+    .auth-header h2 {
+      font-size: 1.5rem;
+    }
+  
+    .input-group input {
+      font-size: 0.875rem;
+    }
+  }
