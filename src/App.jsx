@@ -116,7 +116,7 @@ function App() {
         aesKey
       }
       console.log("bb",bb);
-      const response = await fetch("http://localhost:5000/api/messages", {
+      const response = await fetch("https://capstone2-be.onrender.com/api/messages", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -34,8 +34,8 @@ const Hmsg = ({ activeTab }) => {
         }
         const endpoint =
           activeTab === 'outbox'
-            ? `http://localhost:5000/api/messages/sent/${userId}`
-            : `http://localhost:5000/api/messages/${userId}`;
+            ? `https://capstone2-be.onrender.com/api/messages/sent/${userId}`
+            : `https://capstone2-be.onrender.com/api/messages/${userId}`;
         const response = await axios.get(
             endpoint,
           {

@@ -54,7 +54,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/login', credentials);
+      const res = await axios.post('https://capstone2-be.onrender.com/api/auth/login', credentials);
       login(res.data);
       navigate('/');
     } catch (err) {
